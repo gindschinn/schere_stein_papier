@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: lightpink;
+  justify-content: center;
+}
+header{
+  text-align: center;
+}
+header h1{
+  padding: 30px;
+}
+.score_box{
+  width: 250px;
+  margin: auto;
+  border: 1px solid black;
+}
+.title, .score{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
+.title{
+  border-bottom: 1px solid black;
+}
+.player, #comp_score, #user_score{
+  width: 50%;
+}
+#comp_score, #user_score{
+  padding-top: 5px;
+}
+.choice_box, .match, .message_final{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.choices{
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+}
+.choice{
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+.choice:hover{
+  cursor: pointer;
+  background-color: #fff;
+}
