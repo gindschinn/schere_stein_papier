@@ -9,6 +9,7 @@
     <header>
       <h1>Rock Paper Scissors</h1>
     </header>
+
 <!-- Score -->
     <div class="score_box">
       <div class="title">
@@ -21,24 +22,37 @@
         <span id ="user_score">0</span>
       </div>
     </div>
+
 <!-- Choice Options User -->
-    <div class="choice_box">
-      <div class="choices">
-        <div class="choice" id="rock">
-          Rock
+    <div class="option_box">
+      <div class="options">
+        <div class="option" id="rock">
+          <img src="img/rock.png" alt="rock">
         </div>
-        <div class="choice" id="paper">
-          Paper
+        <div class="option" id="paper">
+          <img src="img/paper.png" alt="paper">
         </div>
-        <div class="choice" id="scissors">
-          Scissors
+        <div class="option" id="scissors">
+          <img src="img/scissors.png" alt="scissors">
         </div>
       </div>
     </div>
+
 <!-- Message Round -->
-    <div class="match"></div>
+    <div class="match"><p></p></div>
+
+<!-- container current match -->
+    <div class="curr_match_box">
+      <div class="choice">
+        <img id= "img_u" src="" alt="">
+      </div>
+      <div class="choice">
+        <img id= "img_c" src="" alt="">
+      </div>
+    </div>
+
 <!-- Message Final -->
-    <div class="message_final">Winner</div>
+    <div class="message_final"><p>Winner</p></div>
 
 
 <!-- link app.js -->

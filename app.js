@@ -10,9 +10,12 @@ const c_score_span = document.getElementById("comp_score");
 const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
+// current match elements
+const img_c = document.getElementById("img_c");
+const img_u = document.getElementById("img_u");
 // message elements
-const match_div = document.querySelector(".match");
-const message_final_div = document.querySelector(".message_final");
+const match_div = document.querySelector(".match > p");
+const message_final_div = document.querySelector(".message_final > p");
 
 //##################### Functions #############################
 // function computer choice
@@ -26,6 +29,9 @@ function compChoice(){
 function curr_match(x){
   const compC = compChoice();
   const userC = x;
+  // display users and computers choice
+  img_c.src=`img/${compC}.png`
+  img_u.src=`img/${userC}.png`
   // conditions for winning
   if(userC === "rock" && compC === "scissors" ||
   userC === "paper" && compC === "rock" ||
