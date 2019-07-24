@@ -45,15 +45,16 @@ header h1{
 .options{
   display: flex;
   justify-content: space-around;
-  width: 25%;
+  width: 40%;
 }
 .option{
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 90px;
   border: 1px solid black;
   border-radius: 50%;
   text-align: center;
   transition: all 0.2s ease;
+  padding: 5px;
 }
 .option:hover{
   cursor: pointer;
@@ -64,19 +65,22 @@ img{
   padding: 5px;
 }
 .curr_match_box{
-  height: 200px;
+  height: 300px;
   margin: auto;
-  padding: 0 0.5rem;
+  margin-top: 2rem;
   width: 50%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
 }
 .choice{
   width: 50%;
-  height: 100%-1rem;
-  margin: 1rem 0.5rem;
   text-align: center;
 }
 .choice img{
-  width: 50%;
+  width: 95%;
+  padding: 0;
+}
+
+#img_c{
+  transform: scaleX(-1);
 }
