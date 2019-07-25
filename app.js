@@ -15,7 +15,7 @@ const img_c = document.getElementById("img_c");
 const img_u = document.getElementById("img_u");
 // message elements
 const match_div = document.querySelector(".match > p");
-const message_final_div = document.querySelector(".message_final > p");
+const message_winner_div = document.querySelector(".message_winner > p");
 
 //##################### Functions #############################
 // function computer choice
@@ -38,15 +38,16 @@ function curr_match(x){
   userC === "scissors" && compC === "paper"){
     userScore ++;
     u_score_span.innerHTML = userScore;
-    match_div.innerHTML = "One point for user";
+    message_winner_div.innerHTML = "One point for you";
   }else if (userC === compC) {
     match_div.innerHTML = "draw";
   }else{
     compScore ++;
     c_score_span.innerHTML = compScore;
-    match_div.innerHTML = "One point for computer";
+    message_winner_div.innerHTML = "One point for the machine";
   }
 }
+
   function game(){
     // Eventlisteners click on choice-divs
     rock_div.addEventListener("click", ()=>{
@@ -58,8 +59,6 @@ function curr_match(x){
     scissors_div.addEventListener("click", ()=>{
       curr_match("scissors");
   })
-  // rock_div.removeEventListener("click", ()=>{curr_match("rock")});
-  // paper_div.removeEventListener("click", ()=>{curr_match("paper")});
-  // scissors_div.removeEventListener("click", ()=>{curr_match("scissors")});
+
 }
 game()

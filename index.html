@@ -3,58 +3,73 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400&display=swap" rel="stylesheet">
     <title>Rock Paper Scissors</title>
   </head>
   <body>
     <header>
-      <h1>Rock Paper Scissors</h1>
+      <h1>Rock</h1>
+      <h1>Paper</h1>
+      <h1>Scissors</h1>
+      <h1>Rock</h1>
+      <h1>Paper</h1>
+      <h1>Scissors</h1>
+      <h1>Rock</h1>
+      <h1>Paper</h1>
+      <h1>Scissors</h1>
+      <h1>Rock</h1>
     </header>
 
-<!-- Score -->
-    <div class="score_box">
-      <div class="title">
-        <div class="player">User</div>
-        <div class="player">Computer</div>
-      </div>
-      <div class="score">
-        <span id = "comp_score">0</span>
-        <span>:</span>
-        <span id ="user_score">0</span>
-      </div>
-    </div>
+    <main>
+      <section class ="left_side">
 
-<!-- Choice Options User -->
-    <div class="option_box">
-      <div class="options">
-        <div class="option" id="rock">
-          <img src="img/rock.png" alt="rock">
+            <!-- Choice Options User -->
+              <div class="option_box">
+                <h3>choose wisely!</h3>
+                <div class="options">
+                  <div class="option" id="rock">
+                    <img src="img/rock.png" alt="rock">
+                    <p class="option_title">rock</p>
+                  </div>
+                  <div class="option" id="paper">
+                    <img src="img/paper.png" alt="paper">
+                    <p class="option_title">paper</p>
+                  </div>
+                  <div class="option" id="scissors">
+                    <img src="img/scissors.png" alt="scissors">
+                    <p class="option_title">scissors</p>
+                  </div>
+                </div>
+                </div>
+
+      </section>
+      <section class="game">
+        <h3>score</h3>
+        <div class="score_box">
+          <div class="title">
+            <div class="player">User</div>
+            <div class="player">Computer</div>
+          </div>
+          <div class="score">
+            <span id = "comp_score">0</span>
+            <span>:</span>
+            <span id ="user_score">0</span>
+          </div>
         </div>
-        <div class="option" id="paper">
-          <img src="img/paper.png" alt="paper">
+    <!-- Message Winner -->
+        <div class="message_winner"><p></p></div>
+    <!-- container current match -->
+        <div class="curr_match_box">
+          <div class="choice">
+            <img id= "img_u" src="" alt="">
+          </div>
+          <div class="choice">
+            <img id= "img_c" src="" alt="">
+          </div>
         </div>
-        <div class="option" id="scissors">
-          <img src="img/scissors.png" alt="scissors">
-        </div>
-      </div>
-    </div>
 
-<!-- Message Round -->
-    <!-- <div class="match"><p></p></div> -->
-
-<!-- container current match -->
-    <div class="curr_match_box">
-      <div class="choice">
-        <img id= "img_u" src="" alt="">
-      </div>
-      <div class="choice">
-        <img id= "img_c" src="" alt="">
-      </div>
-    </div>
-
-<!-- Message Final -->
-    <div class="message_final"><p>Winner</p></div>
-
-
+  </section>
+    </main>
 <!-- link app.js -->
   <script src="app.js"></script>
   </body>
