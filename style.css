@@ -17,6 +17,7 @@ header{
   align-items: center;
   justify-content: space-between;
   background-color: #ffff;
+  border-bottom: 1px solid black;
 }
 h1{
   font-size: 28px;
@@ -79,6 +80,9 @@ h3{
   text-align: center;
   margin: 10px auto;
 }
+.message_winner p {
+  font-weight: 600;
+}
 .player, #comp_score, #user_score{
   width: 50%;
 }
@@ -112,6 +116,10 @@ h3{
   transition: all 0.2s ease;
   padding: 5px;
   margin: 1.5rem 0;
+  background-color: #fcc2d9;
+}
+button:disabled{
+  opacity: 0.5;
 }
 .option img{
   width: 100%;
@@ -135,6 +143,7 @@ h3{
   width: 90%;
   background-color: #ffff;
   border-radius: 5px;
+  border: 1px solid black;
 }
 .choice{
   display: flex;
